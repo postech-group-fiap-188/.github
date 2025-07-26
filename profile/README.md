@@ -6,7 +6,7 @@ Atualmente, nossos repositórios são privados e exclusivos para os integrantes 
 
 ## Membros
 
-| <img src="assets/membro1.jpg" width="200" height="200" alt="Douglas Vinicius"/> | <img src="assets/membro2.jpg" width="200" height="200" alt="Layssa Hillary"/> | <img src="assets/membro4.jpg" width="200" height="200" alt="Thiago Savin"/> |
+| <img src="assets/membro1.jpg" width="200" height="200" alt="Douglas Vinicius"/> | <img src="assets/membro2.jpg" width="200" height="200" alt="Layssa Hillary"/> | <img src="assets/membro3.jpg" width="200" height="200" alt="Thiago Savin"/> |
 |:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|
 | **Douglas Vinicius**                                                            | **Layssa Hillary**                                                            | **Thiago Savin**                                                            |
 

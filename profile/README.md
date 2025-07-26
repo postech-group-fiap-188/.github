@@ -8,6 +8,10 @@ Atualmente, nossos repositórios são privados e exclusivos para os integrantes 
 
 | <img src="assets/membro1.jpg" width="200" height="200" alt="Douglas Vinicius"/> | <img src="assets/membro2.jpg" width="200" height="200" alt="Layssa Hillary"/> | <img src="assets/membro4.jpg" width="200" height="200" alt="Thiago Savin"/> |
 |:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|
-| **Douglas Vinicius**                                                            | **Layssa Hillary**                                                            | **Thiago Savin**                                                             |                                                             | **Thiago Savin**                                                             |
+| **Douglas Vinicius**                                                            | **Layssa Hillary**                                                            | **Thiago Savin**                                                            |
+
+| <img src="assets/image5.jpeg" width="200" height="200" alt="Novo Membro 1"/> | <img src="assets/image6.jpeg" width="200" height="200" alt="Novo Membro 2"/> |
+|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| **Shayna Bauer**                                                           | **Paulo Cavalcante**                                                           |
 ## Como participar
 A colaboração está restrita aos membros atuais do grupo. Se você faz parte da turma ou tem interesse em saber mais, entre em contato com um dos integrantes.

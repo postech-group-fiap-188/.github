@@ -10,7 +10,7 @@ Atualmente, nossos repositórios são privados e exclusivos para os integrantes 
 |:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|
 | **Douglas Vinicius**                                                            | **Layssa Hillary**                                                            | **Thiago Savin**                                                            |
 
-| <img src="assets/image5.jpeg" width="200" height="200" alt="Novo Membro 1"/> | <img src="assets/image6.jpeg" width="200" height="200" alt="Novo Membro 2"/> |
+| <img src="assets/membro4.jpg" width="200" height="200" alt="Novo Membro 1"/> | <img src="assets/membro5.jpg" width="200" height="200" alt="Novo Membro 2"/> |
 |:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
 | **Shayna Bauer**                                                           | **Paulo Cavalcante**                                                           |
 ## Como participar

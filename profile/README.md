@@ -1,6 +1,20 @@
 # **postech-group-fiap-188**
 A **postech-group-fiap-188** é formada por alunos da Pós-graduação em Arquitetura de Software da FIAP. Trabalhamos juntos nos projetos ao longo da pós em Software Architecture - FIAP, sempre seguindo boas práticas de arquitetura, testes e versionamento de código. Nosso objetivo é criar soluções eficientes, escaláveis e bem documentadas.
 
+
+## Membros
+
+| <img src="assets/membro1.jpg" width="200" height="200" alt="Douglas Vinicius"/> | <img src="assets/membro2.jpg" width="200" height="200" alt="Layssa Hillary"/> | <img src="assets/membro3.jpg" width="200" height="200" alt="Thiago Savin"/> |
+|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|
+| **Douglas Vinicius**                                                            | **Layssa Hillary**                                                            | **Thiago Savin**                                                            |
+
+| <img src="assets/membro4.jpg" width="200" height="200" alt="Novo Membro 1"/> | <img src="assets/membro5.jpg" width="200" height="200" alt="Novo Membro 2"/> |
+|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| **Shayna Bauer**                                                           | **Paulo Cavalcante**                                                           |
+## Como participar
+A colaboração está restrita aos membros atuais do grupo. Se você faz parte da turma ou tem interesse em saber mais, entre em contato com um dos integrantes.
+
+
 ## Projetos
 Atualmente, nossos repositórios são privados e exclusivos para os integrantes do grupo, garantindo um ambiente seguro e focado para aprendizagem e desenvolvimento.
 
@@ -98,18 +112,67 @@ O código completo da Fase 3 está disponível em:
 https://github.com/postech-group-fiap-188/fastfood-system/tree/phase3
 
 
+## Fase 4 – Arquitetura de Microserviços e Governança Técnica
 
+Nesta etapa realizamos a **evolução arquitetural do Fastfood System para uma arquitetura de microserviços**, a partir dos *bounded contexts* previamente definidos na Clean Architecture. Cada contexto foi transformado em um serviço independente, com seu próprio banco de dados, promovendo maior isolamento, escalabilidade e autonomia entre os componentes.
 
+Além disso, implementamos **comunicação assíncrona entre os serviços utilizando filas (AWS SQS)** e incorporamos **verificações automatizadas de qualidade de código com SonarQube** nos pipelines de CI, reforçando a maturidade da solução em termos de governança técnica e manutenibilidade. Para o domínio de **Pagamentos**, adotamos um banco de dados **NoSQL (AWS DynamoDB)**, explorando um modelo de persistência mais flexível e escalável para esse contexto.
 
+### Objetivos da Fase
+- Migrar a solução para uma arquitetura de microserviços baseada em *bounded contexts*.
+- Garantir isolamento de dados e autonomia entre os serviços.
+- Introduzir comunicação assíncrona orientada a eventos.
+- Elevar o nível de governança técnica e qualidade de código.
 
-## Membros
+### Principais Entregas
+- **Arquitetura de Microserviços**: migração da aplicação para uma arquitetura distribuída, transformando cada *bounded context* em um microserviço independente.
+- **Isolamento de Dados**: cada microserviço passou a possuir seu próprio banco de dados, garantindo independência, desacoplamento e maior controle sobre a evolução de cada domínio.
+- **Persistência NoSQL no Serviço de Pagamentos**: implementação do **AWS DynamoDB** no microserviço de Pagamentos, atendendo requisitos de escalabilidade, baixa latência e flexibilidade de esquema.
+- **Comunicação Assíncrona**: implementação de comunicação orientada a eventos por meio do **AWS SQS**, aumentando a resiliência e reduzindo acoplamentos diretos.
+- **Qualidade de Código**: integração do **SonarQube** aos pipelines de CI para análise estática de código, monitoramento de débitos técnicos, cobertura de testes e padronização de qualidade.
+- **Evolução da Governança Técnica**: aprimoramento das práticas de integração contínua, garantindo que cada serviço seja validado automaticamente quanto à qualidade, build e conformidade arquitetural.
 
-| <img src="assets/membro1.jpg" width="200" height="200" alt="Douglas Vinicius"/> | <img src="assets/membro2.jpg" width="200" height="200" alt="Layssa Hillary"/> | <img src="assets/membro3.jpg" width="200" height="200" alt="Thiago Savin"/> |
-|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|
-| **Douglas Vinicius**                                                            | **Layssa Hillary**                                                            | **Thiago Savin**                                                            |
+### Técnicas e Ferramentas Utilizadas
+- Arquitetura de microserviços baseada em *Bounded Contexts*.
+- Bancos de dados independentes por serviço.
+- AWS DynamoDB para persistência NoSQL no domínio de Pagamentos.
+- Comunicação assíncrona com AWS SQS.
+- SonarQube para análise de qualidade de código.
+- CI/CD para automação de build, testes e deploy.
 
-| <img src="assets/membro4.jpg" width="200" height="200" alt="Novo Membro 1"/> | <img src="assets/membro5.jpg" width="200" height="200" alt="Novo Membro 2"/> |
-|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-| **Shayna Bauer**                                                           | **Paulo Cavalcante**                                                           |
-## Como participar
-A colaboração está restrita aos membros atuais do grupo. Se você faz parte da turma ou tem interesse em saber mais, entre em contato com um dos integrantes.
+### Repositórios da Fase 4
+
+Nesta fase, a solução foi distribuída em múltiplos repositórios, refletindo a arquitetura de microserviços, a separação de domínios e a infraestrutura como código.
+
+#### Microserviços
+
+**Payment**  
+Responsável por gerenciar todo o fluxo de pagamentos do sistema.  
+https://github.com/postech-group-fiap-188/fastfood-payment-system
+
+**Product**  
+Responsável pelo gerenciamento de produtos, atendendo aos perfis de administrador e cliente.  
+https://github.com/postech-group-fiap-188/fastfood-products-system
+
+**Order**  
+Responsável pela fluxo de criação de pedidos.  
+https://github.com/postech-group-fiap-188/fastfood-orders-system
+
+**Kitchen**  
+Responsável pelo preparo e acompanhamento da entrega dos pedidos.  
+https://github.com/postech-group-fiap-188/fastfood-kitchen-system
+
+#### Infraestrutura
+
+**Banco de Dados (RDS)**  
+Repositório contendo a infraestrutura de banco de dados utilizando AWS RDS.  
+https://github.com/postech-group-fiap-188/fastfood-infra-db
+
+**Gateway**  
+Repositório responsável pela criação e configuração do API Gateway na AWS.  
+https://github.com/postech-group-fiap-188/fastfood-infra-gtw
+
+**Infraestrutura Geral**  
+Repositório responsável pelo provisionamento da infraestrutura completa do ambiente em nuvem.  
+https://github.com/postech-group-fiap-188/fastfood-infra
+
